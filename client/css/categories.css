@@ -1,0 +1,22 @@
+.categories {
+  max-width: 70ch;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.category a {
+  text-decoration: none;
+  color: var(--link);
+}
+
+.category span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}

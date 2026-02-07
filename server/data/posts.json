@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Comprendre les closures en JavaScript",
+    "slug": "comprendre-les-closures-en-javascript",
+    "authorId": 1,
+    "date": "2026-01-10",
+    "tags": ["javascript", "bases"],
+    "content": "# Introduction\n\nLes closures sont un concept fondamental en JavaScript.\n\n## Définition\n\nUne closure est une fonction qui se souvient de son environnement lexical.\n\n## Exemple simple\n\n```js\nfunction compteur() {\n  let count = 0;\n  return () => ++count;\n}\n```\n\n## Cas d'usage\n\nLes closures sont très utilisées pour l'encapsulation et les callbacks."
+  },
+  {
+    "id": 2,
+    "title": "Var, let et const : quelles différences ?",
+    "slug": "var-let-const-differences",
+    "authorId": 1,
+    "date": "2026-01-12",
+    "tags": ["javascript", "es6"],
+    "content": "# Introduction\n\nJavaScript propose trois mots-clés pour déclarer des variables.\n\n## var\n\nPortée fonctionnelle et hoisting.\n\n## let\n\nPortée de bloc.\n\n## const\n\nIdentique à let mais non réassignable."
+  },
+  {
+    "id": 3,
+    "title": "Comprendre le modèle événementiel du DOM",
+    "slug": "modele-evenementiel-dom",
+    "authorId": 1,
+    "date": "2026-01-15",
+    "tags": ["javascript", "dom"],
+    "content": "# Le DOM et les événements\n\nLe DOM repose sur un système d'événements.\n\n## Bubbling\n\nL'événement remonte dans l'arbre DOM.\n\n## Capturing\n\nL'événement descend avant d'atteindre la cible.\n\n## stopPropagation\n\nPermet de bloquer la propagation."
+  },
+  {
+    "id": 4,
+    "title": "Fetch API : bien gérer les requêtes HTTP",
+    "slug": "fetch-api-requetes-http",
+    "authorId": 1,
+    "date": "2026-01-18",
+    "tags": ["javascript", "api"],
+    "content": "# Introduction\n\nFetch est l'API moderne pour les requêtes HTTP.\n\n## Requête GET\n\n```js\nfetch('/api/posts');\n```\n\n## Gestion des erreurs\n\nIl faut vérifier `response.ok`.\n\n## Async / Await\n\nRend le code plus lisible."
+  },
+  {
+    "id": 5,
+    "title": "Async / Await expliqué simplement",
+    "slug": "async-await-explique",
+    "authorId": 1,
+    "date": "2026-01-20",
+    "tags": ["javascript", "async"],
+    "content": "# Pourquoi async/await ?\n\nPour éviter le callback hell.\n\n## Fonction async\n\nUne fonction async retourne toujours une promesse.\n\n## Await\n\nPermet d'attendre le résultat sans bloquer."
+  },
+  {
+    "id": 6,
+    "title": "Qu'est-ce qu'une API REST ?",
+    "slug": "api-rest-definition",
+    "authorId": 1,
+    "date": "2026-01-22",
+    "tags": ["backend", "api"],
+    "content": "# Définition\n\nUne API REST respecte un ensemble de conventions.\n\n## Méthodes HTTP\n\nGET, POST, PUT, DELETE.\n\n## Stateless\n\nChaque requête est indépendante."
+  },
+  {
+    "id": 7,
+    "title": "Structurer un projet JavaScript sans framework",
+    "slug": "structurer-projet-js-sans-framework",
+    "authorId": 1,
+    "date": "2026-01-25",
+    "tags": ["architecture", "javascript"],
+    "content": "# Pourquoi le vanilla ?\n\nComprendre avant d'abstraire.\n\n## Séparation des responsabilités\n\nAPI, rendu, logique.\n\n## Avantages\n\nLisibilité et contrôle."
+  },
+  {
+    "id": 8,
+    "title": "Introduction à Express.js",
+    "slug": "introduction-express-js",
+    "authorId": 1,
+    "date": "2026-01-27",
+    "tags": ["nodejs", "express"],
+    "content": "# Express.js\n\nFramework minimaliste pour Node.js.\n\n## Routing\n\nDéfinir des endpoints HTTP.\n\n## Middleware\n\nFonctions exécutées entre la requête et la réponse."
+  },
+  {
+    "id": 9,
+    "title": "Pourquoi utiliser des slugs dans une URL",
+    "slug": "pourquoi-utiliser-des-slugs",
+    "authorId": 1,
+    "date": "2026-01-29",
+    "tags": ["seo", "web"],
+    "content": "# Slug\n\nUn slug est une version lisible d'un identifiant.\n\n## Avantages SEO\n\nURLs compréhensibles.\n\n## Génération\n\nBasée sur le titre."
+  },
+  {
+    "id": 10,
+    "title": "Mode sombre : bonnes pratiques CSS",
+    "slug": "mode-sombre-bonnes-pratiques-css",
+    "authorId": 1,
+    "date": "2026-02-01",
+    "tags": ["css", "ui"],
+    "content": "# Le dark mode\n\nTrès demandé par les utilisateurs.\n\n## Variables CSS\n\nPermettent un thème dynamique.\n\n## Accessibilité\n\nContraste et lisibilité."
+  }
+]

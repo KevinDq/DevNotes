@@ -1,0 +1,93 @@
+.article {
+  max-width: 70ch;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.meta {
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.toc {
+  border-left: 3px solid var(--border);
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+}
+
+.toc li {
+  margin: 0.3rem 0;
+}
+
+article h2, article h3 {
+  margin-top: 2rem;
+}
+
+.related {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.related ul {
+  list-style: none;
+  padding: 0;
+}
+
+.related li {
+  margin-bottom: 0.5rem;
+}
+
+.related a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.related a:hover {
+  text-decoration: underline;
+}
+
+.share {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.share a {
+  text-decoration: none;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--card);
+  color: var(--text);
+}
+
+.comments {
+  margin-top: 4rem;
+}
+
+.comment {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.comment-author {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.comment-date {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.comment-content {
+  margin-top: 0.5rem;
+}
