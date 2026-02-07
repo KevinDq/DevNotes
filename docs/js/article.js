@@ -16,7 +16,7 @@ if (!slug) {
 }
 
 // 2. Fetch de l'article
-const res = await fetch(`${API_URL}/${slug}`);
+const res = await fetch(`${API_BASE_URL}/${slug}`);
 
 if (!res.ok) {
   document.body.textContent = "Article introuvable.";
