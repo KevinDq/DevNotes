@@ -1,7 +1,10 @@
 import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
 import { commentsData } from "./comments.js";
 
-const API_URL = "http://localhost:3000/api/posts";
+const API_BASE_URL =
+  location.hostname.includes("github.io")
+    ? "https://devnotes-1o1i.onrender.com/"
+    : "http://localhost:3000";
 
 // 1. Récupérer le slug
 const params = new URLSearchParams(window.location.search);
