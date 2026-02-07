@@ -1,6 +1,6 @@
 const headerContainer = document.createElement("div");
 
-fetch("/partials/header.html")
+fetch("../partials/header.html")
   .then(res => res.text())
   .then(html => {
     headerContainer.innerHTML = html;
