@@ -4,7 +4,7 @@ const API_BASE_URL =
     : "http://localhost:3000";
 
 const API_POSTS = `${API_BASE_URL}/api/posts`;
-const API_SEARCH = `${API_BASE_URL}/api/search`;
+const API_AUTHORS = `${API_BASE_URL}/api/authors`;
 const container = document.getElementById("authors");
 
 const [authorsRes, postsRes] = await Promise.all([
