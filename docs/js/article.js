@@ -5,6 +5,7 @@ const API_BASE_URL =
   location.hostname.includes("github.io")
     ? "https://devnotes-1o1i.onrender.com/"
     : "http://localhost:3000";
+const API_URL = `${API_BASE_URL}/api/articles`;
 
 // 1. Récupérer le slug
 const params = new URLSearchParams(window.location.search);
@@ -16,7 +17,7 @@ if (!slug) {
 }
 
 // 2. Fetch de l'article
-const res = await fetch(`${API_BASE_URL}/${slug}`);
+const res = await fetch(`${API_URL}/${slug}`);
 
 if (!res.ok) {
   document.body.textContent = "Article introuvable.";
