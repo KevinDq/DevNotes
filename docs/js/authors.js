@@ -17,19 +17,23 @@ const authors = await authorsRes.json();
 const posts = await postsRes.json();
 
 authors.forEach(author => {
-  const authorPosts = posts.filter(p => p.authorId === author.id);
+const authorPosts = posts.filter(p => p.authorId === author.id);
 
-  const avatarUrl =
+const avatarPath = author.avatar.startsWith("/")
+  ? author.avatar
+  : `/${author.avatar}`;
+
+const avatarUrl =
   location.hostname.includes("github.io")
-    ? `/devnotes${author.avatar}`
-    : author.avatar;
+    ? `/devnotes${avatarPath}`
+    : avatarPath;
 
   const div = document.createElement("div");
   div.className = "author";
 
   div.innerHTML = `
-    <img src="${avatarUrl}">
-
+    <img src="${avatarUrl}" alt="${author.name}">
+    
     <div>
       <h2>${author.name}</h2>
       <p>${author.bio}</p>
