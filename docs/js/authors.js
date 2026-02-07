@@ -1,4 +1,4 @@
-onst API_BASE_URL =
+const API_BASE_URL =
   location.hostname.includes("github.io")
     ? "https://devnotes-1o1i.onrender.com"
     : "http://localhost:3000";
