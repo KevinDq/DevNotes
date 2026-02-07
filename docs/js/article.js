@@ -3,9 +3,9 @@ import { commentsData } from "./comments.js";
 
 const API_BASE_URL =
   location.hostname.includes("github.io")
-    ? "https://devnotes-1o1i.onrender.com/"
+    ? "https://devnotes-1o1i.onrender.com"
     : "http://localhost:3000";
-const API_URL = `${API_BASE_URL}/api/articles`;
+const API_URL = `${API_BASE_URL}/api/posts`;
 
 // 1. Récupérer le slug
 const params = new URLSearchParams(window.location.search);
