@@ -1,10 +1,11 @@
-const API_BASE_URL =
+onst API_BASE_URL =
   location.hostname.includes("github.io")
     ? "https://devnotes-1o1i.onrender.com"
     : "http://localhost:3000";
 
-const API_POSTS = `${API_BASE_URL}/api/posts`;
 const API_AUTHORS = `${API_BASE_URL}/api/authors`;
+const API_POSTS = `${API_BASE_URL}/api/posts`;
+
 const container = document.getElementById("authors");
 
 const [authorsRes, postsRes] = await Promise.all([
@@ -12,13 +13,13 @@ const [authorsRes, postsRes] = await Promise.all([
   fetch(API_POSTS)
 ]);
 
+const authors = await authorsRes.json();
+const posts = await postsRes.json();
+
 const avatarUrl =
   location.hostname.includes("github.io")
     ? `/devnotes${post.author.avatar}`
     : post.author.avatar;
-
-const authors = await authorsRes.json();
-const posts = await postsRes.json();
 
 authors.forEach(author => {
   const authorPosts = posts.filter(p => p.authorId === author.id);
