@@ -16,13 +16,13 @@ const [authorsRes, postsRes] = await Promise.all([
 const authors = await authorsRes.json();
 const posts = await postsRes.json();
 
-const avatarUrl =
-  location.hostname.includes("github.io")
-    ? `/devnotes${post.author.avatar}`
-    : post.author.avatar;
-
 authors.forEach(author => {
   const authorPosts = posts.filter(p => p.authorId === author.id);
+
+  const avatarUrl =
+  location.hostname.includes("github.io")
+    ? `/devnotes${author.avatar}`
+    : author.avatar;
 
   const div = document.createElement("div");
   div.className = "author";
