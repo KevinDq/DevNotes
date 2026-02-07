@@ -12,6 +12,11 @@ const [authorsRes, postsRes] = await Promise.all([
   fetch(API_POSTS)
 ]);
 
+const avatarUrl =
+  location.hostname.includes("github.io")
+    ? `/devnotes${post.author.avatar}`
+    : post.author.avatar;
+
 const authors = await authorsRes.json();
 const posts = await postsRes.json();
 
@@ -22,7 +27,7 @@ authors.forEach(author => {
   div.className = "author";
 
   div.innerHTML = `
-    <img src="${author.avatar}" alt="${author.name}" />
+    <img src="${avatarUrl}">
 
     <div>
       <h2>${author.name}</h2>
