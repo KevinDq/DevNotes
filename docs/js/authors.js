@@ -1,6 +1,10 @@
-const API_AUTHORS = "http://localhost:3000/api/authors";
-const API_POSTS = "http://localhost:3000/api/posts";
+const API_BASE_URL =
+  location.hostname.includes("github.io")
+    ? "https://devnotes-1o1i.onrender.com"
+    : "http://localhost:3000";
 
+const API_POSTS = `${API_BASE_URL}/api/posts`;
+const API_SEARCH = `${API_BASE_URL}/api/search`;
 const container = document.getElementById("authors");
 
 const [authorsRes, postsRes] = await Promise.all([
