@@ -25,7 +25,7 @@ const avatarPath = author.avatar.startsWith("/")
 
 const avatarUrl =
   location.hostname.includes("github.io")
-    ? `/devnotes${avatarPath}`
+    ? `/DevNotes${avatarPath}`
     : avatarPath;
 
   const div = document.createElement("div");
